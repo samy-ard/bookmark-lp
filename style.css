@@ -227,6 +227,10 @@ img {
 	padding: 0 0.75rem 0.375rem;
 }
 
+.tab-pane {
+	position: relative;
+}
+
 .tab-pane.fade {
 	opacity: 0;
 	height: 0;
