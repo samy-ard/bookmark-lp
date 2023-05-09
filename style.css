@@ -12,6 +12,7 @@
 	--light: hsl(0, 0%, 96%);
 	--primary: var(--blue);
 	--secondary: var(--red);
+	--success: hsl(168, 100%, 33.333%);
 	--modal: hsla(229, 31%, 21%, 90%);
 }
 
@@ -200,13 +201,23 @@ img {
 	background-image: url('./images/icon-error.svg');
 }
 
+.form-field.field-success {
+	border-color: var(--success);
+}
+
 .has-error {
 	color: var(--white);
 	border-radius: 0.375rem;
 	background-color: var(--secondary);
 }
 
-.form-error {
+.has-success {
+	color: var(--white);
+	border-radius: 0.375rem;
+	background-color: var(--success);
+}
+
+.form-message {
 	text-align: left;
 	margin-bottom: 0;
 	font-size: 0.625rem;

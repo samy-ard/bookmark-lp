@@ -58,14 +58,20 @@
 			e.preventDefault();
 			var $form = $(this);
 			var $email = $form.find('input[name="email"]');
-			$form.find('.form-error').remove();
+			$form.find('.form-message').remove();
 			$email.removeClass('field-error');
+			$email.removeClass('field-success');
 			$email.parent().removeClass('has-error');
+			$email.parent().removeClass('has-success');
 
 			if( isEmail($email.val()) === false ) {
 				$email.addClass('field-error');
 				$email.parent().addClass('has-error');
-				$email.parent().append("<p class=\"form-error\">Whoops, make sure it's an email</p>");
+				$email.parent().append("<p class=\"form-message\">Whoops, make sure it's an email</p>");
+			} else {
+				$email.addClass('field-success');
+				$email.parent().addClass('has-success');
+				$email.parent().append("<p class=\"form-message\">Joined successfully!</p>");
 			}
 		});
 	});
