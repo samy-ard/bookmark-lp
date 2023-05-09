@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row row-centered">
+        <div class="col">
+          <a href="#" class="brand" title="Bookmark">
+            <img src="./images/logo-bookmark.svg" alt="Bookmark Logo">
+          </a>
+        </div>
+        <div class="col-auto">
+          <nav class="navbar">
+            <button type="button" class="btn btn-menu">
+              <img src="./images/icon-hamburger.svg" alt="Menu">
+            </button>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link" title="Features">Features</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link" title="Pricing">Pricing</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link" title="Contact">Contact</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link" title="Login">Login</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section hero">
+      <div class="container">
+        <div class="row row-centered">
+          <div class="col-12 hero-image">
+            <img class="hero-figure" src="./images/illustration-hero.svg" alt="Hero Illustration" />
+          </div>
+          <div class="col-12 hero-text">
+            <h1 class="hero-title">A Simple Bookmark Manager</h1>
+            <p class="hero-desc">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary" title="Get it on Chrome">Get it on Chrome</a>
+              <a href="#" class="btn btn-light" title="Get it on Firefox">Get it on Firefox</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="features-title">Features</h2>
+            <p class="features-desc">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-tab-item" role="presentation">
+                <button class="nav-tab-link active" data-target="#one" type="button" role="tab" aria-selected="true">Simple Bookmarking</button>
+              </li>
+              <li class="nav-tab-item" role="presentation">
+                <button class="nav-tab-link" data-target="#two" type="button" role="tab" aria-selected="false">Speedy Searching</button>
+              </li>
+              <li class="nav-tab-item" role="presentation">
+                <button class="nav-tab-link" data-target="#three" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="one" role="tabpanel">
+                <div class="row">
+                  <div class="col-12 tab-image">
+                    <img class="tab-figure" src="./images/illustration-features-tab-1.svg" alt="Bookmark in one click">
+                  </div>
+                  <div class="col-12 tab-text">
+                    <h2 class="tab-title">Bookmark in one click</h2>
+                    <p class="tab-desc">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <a href="#" class="btn btn-primary tab-link">More Info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="two" role="tabpanel">
+                <div class="row">
+                  <div class="col-12 tab-image">
+                    <img class="tab-figure" src="./images/illustration-features-tab-2.svg" alt="Intelligent search">
+                  </div>
+                  <div class="col-12 tab-text">
+                    <h2 class="tab-title">Intelligent search</h2>
+                    <p class="tab-desc">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                    <a href="#" class="btn btn-primary tab-link">More Info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="three" role="tabpanel">
+                <div class="row">
+                  <div class="col-12 tab-image">
+                    <img class="tab-figure" src="./images/illustration-features-tab-3.svg" alt="Share your bookmarks">
+                  </div>
+                  <div class="col-12 tab-text">
+                    <h2 class="tab-title">Share your bookmarks</h2>
+                    <p class="tab-desc">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                    <a href="#" class="btn btn-primary tab-link">More Info</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section extension">
+      <div class="container">
+        <div class="row row-center">
+          <div class="col-12">
+            <h2 class="extension-title">Download the extension</h2>
+            <p class="extension-desc">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+          </div>
+          <div class="col-12 col-lg-4 extension-col">
+            <article class="card">
+              <div class="card-header">
+                <img class="card-image" src="./images/logo-chrome.svg" alt="Chrome Browser">
+              </div>
+              <div class="card-text">
+                <h3 class="card-title">Add to Chrome</h3>
+                <p class="card-desc">Minimum version 62</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary btn-full" title="Add &amp; Install Extension">Add &amp; Install Extension</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4 extension-col">
+            <article class="card">
+              <div class="card-header">
+                <img class="card-image" src="./images/logo-firefox.svg" alt="Firefox Browser">
+              </div>
+              <div class="card-text">
+                <h3 class="card-title">Add to Firefox</h3>
+                <p class="card-desc">Minimum version 55</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary btn-full" title="Add &amp; Install Extension">Add &amp; Install Extension</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-lg-4 extension-col">
+            <article class="card">
+              <div class="card-header">
+                <img class="card-image" src="./images/logo-opera.svg" alt="Opera Browser">
+              </div>
+              <div class="card-text">
+                <h3 class="card-title">Add to Opera</h3>
+                <p class="card-desc">Minimum version 46</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary btn-full" title="Add &amp; Install Extension">Add &amp; Install Extension</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-desc">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            <div class="accordion faq-accordion">
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button" data-target="#questionOne" aria-expanded="false">What is Bookmark?</button>
+                </h4>
+                <div id="questionOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button" data-target="#questionTwo" aria-expanded="false">How can I request a new browser?</button>
+                </h4>
+                <div id="questionTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button" data-target="#questionThree" aria-expanded="false">Is there a mobile app?</button>
+                </h4>
+                <div id="questionThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button" data-target="#questionFour" aria-expanded="false">What about other Chromium browsers?</button>
+                </h4>
+                <div id="questionFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-link">
+              <a href="#" class="btn btn-primary" title="More Info">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="contact-heading">35,000+ already joined</h6>
+            <h2 class="contact-title">Stay up-to-date with what we’re doing</h2>
+          </div>
+          <div class="col-12">
+            <form class="form contact-form" action="#" method="post">
+              <div class="form-group">
+                <input type="text" name="email" class="form-field" placeholder="Enter your email address"/>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-secondary btn-full">Contact Us</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-auto">
+          <a href="#" class="brand" title="Bookmark">
+            <img src="./images/logo-bookmark-alt.svg" alt="Bookmark Logo">
+          </a>
+        </div>
+        <div class="col-12 col-lg">
+          <ul class="menu footer-menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link" title="Features">Features</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" title="Pricing">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-auto">
+          <ul class="menu social-menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link" title="Facebook">
+                <img src="./images/icon-facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" title="Twitter">
+                <img src="./images/icon-twitter.svg" alt="Twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="container">
+      <div class="modal-header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="#" class="brand" title="Bookmark">
+                <img src="./images/logo-bookmark-modal.svg" alt="Bookmark Logo">
+              </a>
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-close">
+                <img src="./images/icon-close.svg" alt="Menu">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <ul class="menu social-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" title="Facebook">
+              <img src="./images/icon-facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" title="Twitter">
+              <img src="./images/icon-twitter.svg" alt="Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
